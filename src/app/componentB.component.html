@@ -1,0 +1,14 @@
+<h1>{{name}}</h1> 
+<button (click)="increment()">Increment</button>
+<p>Count in component B: {{ count }}</p>
+<ng-template #OtherWorld>
+    
+    <div class="default-tab-buttons">
+        ...
+    </div>
+    
+</ng-template>
+<ng-container 
+  *ngTemplateOutlet="OtherWorld">
+    
+</ng-container>
